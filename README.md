@@ -17,36 +17,36 @@ This repository contains the OptimAI Node CLI. Use it to sign in, run your node,
 Run the following commands in your terminal to download and install:
 
 ```bash
-# Download and rename to node-cli
-curl -L https://optimai.network/download/cli-node/mac -o node-cli
+# Download and rename to optimai-cli
+curl -L https://optimai.network/download/cli-node/mac -o optimai-cli
 
 # Make executable and install to PATH
-chmod +x node-cli
-sudo mv node-cli /usr/local/bin/node-cli
+chmod +x optimai-cli
+sudo mv optimai-cli /usr/local/bin/optimai-cli
 ```
 
 ### Linux (Ubuntu)
 
 ```bash
-# Download and rename to node-cli
-curl -L https://optimai.network/download/cli-node/linux -o node-cli
+# Download and rename to optimai-cli
+curl -L https://optimai.network/download/cli-node/linux -o optimai-cli
 
 # Make executable and install to PATH
-chmod +x node-cli
-sudo mv node-cli /usr/local/bin/node-cli
+chmod +x optimai-cli
+sudo mv optimai-cli /usr/local/bin/optimai-cli
 ```
 
 ### Windows (PowerShell or Command Prompt)
 
 ```cmd
-curl.exe -L https://optimai.network/download/cli-node/win -o node-cli.exe
+curl.exe -L https://optimai.network/download/cli-node/win -o optimai-cli.exe
 ```
 
 After downloading, you can run it from the current folder:
 ```cmd
-.\node-cli.exe --help
+.\optimai-cli.exe --help
 ```
-*Tip: Move `node-cli.exe` to a folder in your System PATH to use it from anywhere as `node-cli`.*
+*Tip: Move `optimai-cli.exe` to a folder in your System PATH to use it from anywhere as `optimai-cli`.*
 
 ## Tutorial
 
@@ -55,7 +55,7 @@ After downloading, you can run it from the current folder:
 Open a terminal and run:
 
 ```bash
-node-cli auth login
+optimai-cli auth login
 ```
 
 Enter your email and password when prompted.
@@ -65,13 +65,13 @@ Enter your email and password when prompted.
 Make sure Docker Desktop is running, then start the node:
 
 ```bash
-node-cli node start
+optimai-cli node start
 ```
 
 **Running in the background (Linux/macOS):**
 To keep the node running after closing your terminal, we recommend using a tool like `screen`:
 1. Start a new session: `screen -S optimai`
-2. Run the node: `node-cli node start`
+2. Run the node: `optimai-cli node start`
 3. Detach: Press `Ctrl+A` then `D`
 4. Resume later: `screen -r optimai`
 
@@ -82,19 +82,19 @@ Otherwise, keep your terminal open while the node is running.
 Open a new terminal and run:
 
 ```bash
-node-cli node status
+optimai-cli node status
 ```
 
 ### 4) View rewards
 
 ```bash
-node-cli rewards balance
+optimai-cli rewards balance
 ```
 
 ### 5) Update the CLI
 
 ```bash
-node-cli update
+optimai-cli update
 ```
 
 ### 6) Stop the node
@@ -106,29 +106,29 @@ Press `Ctrl+C` in the terminal where the node is running.
 Account:
 
 ```bash
-node-cli auth login
-node-cli auth status
-node-cli auth me
-node-cli auth logout
+optimai-cli auth login
+optimai-cli auth status
+optimai-cli auth me
+optimai-cli auth logout
 ```
 
 Node:
 
 ```bash
-node-cli node start
-node-cli node status
+optimai-cli node start
+optimai-cli node status
 ```
 
 Rewards:
 
 ```bash
-node-cli rewards balance
+optimai-cli rewards balance
 ```
 
 Updates:
 
 ```bash
-node-cli update
+optimai-cli update
 ```
 
 
@@ -139,7 +139,7 @@ node-cli update
 
 ## Troubleshooting
 
-- **Docker not running**: If `node-cli node status` shows Docker as `not_running`, start Docker Desktop and retry.
+- **Docker not running**: If `optimai-cli node status` shows Docker as `not_running`, start Docker Desktop and retry.
 - **Node already running**: If you see "Another node instance is already running", a node process is active in the background.
-  - Run `node-cli node status` to check the Process ID (PID).
+  - Run `optimai-cli node status` to check the Process ID (PID).
   - If you need to stop it manually, use your system's task manager or run `kill <PID>` (macOS/Linux).
