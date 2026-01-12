@@ -4,11 +4,23 @@ This repository contains the OptimAI Node CLI. Use it to sign in, run your node,
 
 > **Full Documentation:** For detailed information about the OptimAI Node, please visit our [Official Documentation](https://docs.optimai.network/docs/optimai-node/core-node).
 
-## Prerequisites
+## Requirements
 
-- OptimAI account
-- Docker Desktop (required to run the node)
-  - Download: https://www.docker.com/products/docker-desktop/
+Before installing, ensure you have:
+
+- **Hardware**:
+  - **RAM**: 4 GB minimum (8 GB recommended).
+  - **CPU**: 2 Cores or more.
+  - **Disk Space**: 10 GB free space.
+- **Operating System**:
+  - Windows 10/11
+  - macOS 12+ (Intel or Apple Silicon)
+  - Ubuntu 22.04+ (or compatible Linux distro)
+- **Software**:
+  - **Docker**: Docker Desktop (Windows/macOS) or Docker Engine (Linux) must be installed and running.
+    - [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- **Account**: OptimAI account
+- **Network**: Active internet connection
 
 ## Install
 
