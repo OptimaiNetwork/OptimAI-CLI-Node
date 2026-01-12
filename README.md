@@ -62,6 +62,8 @@ After downloading, you can run it from the current folder:
 
 ## Tutorial
 
+**Windows note:** If you haven't added the binary to your PATH, use `.\optimai-cli.exe` instead of `optimai-cli` in the examples below.
+
 ### 1) Sign in
 
 Open a terminal and run:
@@ -114,6 +116,8 @@ optimai-cli update
 Press `Ctrl+C` in the terminal where the node is running.
 
 ## Command Reference
+
+**Windows note:** Use `.\optimai-cli.exe` if the binary isn't in your PATH.
 
 Account:
 
