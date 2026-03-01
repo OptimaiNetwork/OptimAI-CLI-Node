@@ -30,7 +30,7 @@ Run the following commands in your terminal to download and install:
 
 ```bash
 # Download and rename to optimai-cli
-curl -L https://optimai.network/download/cli-node/mac -o optimai-cli
+curl -L https://cli-node.optimai.network/optimai_cli_darwin_universal2 -o optimai-cli
 
 # Make executable and install to PATH
 chmod +x optimai-cli
@@ -41,7 +41,7 @@ sudo mv optimai-cli /usr/local/bin/optimai-cli
 
 ```bash
 # Download and rename to optimai-cli
-curl -L https://optimai.network/download/cli-node/linux -o optimai-cli
+curl -L https://cli-node.optimai.network/optimai_cli_ubuntu -o optimai-cli
 
 # Make executable and install to PATH
 chmod +x optimai-cli
@@ -51,7 +51,7 @@ sudo mv optimai-cli /usr/local/bin/optimai-cli
 ### Windows (PowerShell or Command Prompt)
 
 ```cmd
-curl.exe -L https://optimai.network/download/cli-node/win -o optimai-cli.exe
+curl.exe -L https://cli-node.optimai.network/optimai_cli_windows.exe -o optimai-cli.exe
 ```
 
 After downloading, you can run it from the current folder:
