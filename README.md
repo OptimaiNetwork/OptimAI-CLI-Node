@@ -30,7 +30,7 @@ Run the following commands in your terminal to download and install:
 
 ```bash
 # Download and rename to optimai-cli
-curl -L https://cli-node.optimai.network/optimai_cli_darwin_universal2 -o optimai-cli
+curl -fL https://cli-node.optimai.network/optimai_cli_darwin_universal2 -o optimai-cli
 
 # Make executable and install to PATH
 chmod +x optimai-cli
@@ -41,7 +41,7 @@ sudo mv optimai-cli /usr/local/bin/optimai-cli
 
 ```bash
 # Download and rename to optimai-cli
-curl -L https://cli-node.optimai.network/optimai_cli_ubuntu -o optimai-cli
+curl -fL https://cli-node.optimai.network/optimai_cli_ubuntu -o optimai-cli
 
 # Make executable and install to PATH
 chmod +x optimai-cli
@@ -51,7 +51,7 @@ sudo mv optimai-cli /usr/local/bin/optimai-cli
 ### Windows (PowerShell or Command Prompt)
 
 ```cmd
-curl.exe -L https://cli-node.optimai.network/optimai_cli_windows.exe -o optimai-cli.exe
+curl.exe -fL https://cli-node.optimai.network/optimai_cli_windows.exe -o optimai-cli.exe
 ```
 
 After downloading, you can run it from the current folder:
@@ -59,6 +59,10 @@ After downloading, you can run it from the current folder:
 .\optimai-cli.exe --help
 ```
 *Tip: Move `optimai-cli.exe` to a folder in your System PATH to use it from anywhere as `optimai-cli`.*
+
+When reinstalling on Windows, replace the existing `optimai-cli.exe` file in
+the folder where you normally run the CLI. Downloading a second copy to another
+folder will not update the CLI you currently use.
 
 ## Tutorial
 
@@ -170,6 +174,24 @@ optimai-cli update
 - Keep Docker Desktop running before you start the node.
 
 ## Troubleshooting
+
+### Important OptimAI CLI update available
+
+If the CLI shows this warning, your node can continue running and mining
+normally. However, the installed CLI uses an older update system that could
+fail during a future automatic update and interrupt your mining.
+
+Please reinstall the latest OptimAI CLI as soon as possible by repeating the
+instructions in the [Install](#install) section above. After installation, run:
+
+```bash
+optimai-cli --version
+optimai-cli node start
+```
+
+Running `optimai-cli update` will not resolve this warning. You must repeat the
+installation steps to replace the complete CLI application. Reinstalling the
+CLI does not remove your account, node settings, or existing node data.
 
 - **Browser login not working**: If browser login fails or the dashboard doesn't support it yet, use the legacy email/password method with `optimai-cli auth login --legacy`.
 - **Docker not running**: If `optimai-cli node status` shows Docker as `not_running`, start Docker Desktop and retry.
